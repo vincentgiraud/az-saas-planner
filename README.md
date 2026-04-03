@@ -45,16 +45,6 @@ cd az-saas-planner
 cp -r .github/ /path/to/your-project/.github/
 ```
 
-Or start fresh:
-
-```bash
-mkdir my-saas && cd my-saas
-git init
-git remote add planner https://github.com/vincentgiraud/az-saas-planner.git
-git fetch planner template
-git checkout planner/template -- .
-```
-
 ### 2. Open Copilot Chat in agent mode
 
 In VS Code, open the Copilot Chat panel and switch to **Agent** mode (the dropdown at the top of the chat).
