@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# Build outputs
+src/web/dist/
+infra/main.json
+
+# Environment / secrets
+.env
+.azure/**/config.json
+.azure/**/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+*.log
+
+# Package lock for workers (generated)
+src/web/package-lock.json
