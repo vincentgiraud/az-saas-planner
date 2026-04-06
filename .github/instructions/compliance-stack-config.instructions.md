@@ -191,7 +191,7 @@ For every parameter with a fixed set of valid values (`industry`, `workload_type
 1. **Exact match** — If the value matches a valid option (case-insensitive), accept it.
 2. **Fuzzy match** — If no exact match, attempt a fuzzy match against the valid values:
    - Common misspellings: "Healthcar" → "Healthcare", "Fintech" → "FinTech", "ecommerce" → "E-commerce"
-   - Synonyms: "Finance" → "FinTech", "Medical" → "Healthcare", "Legal" → "LegalTech", "Insurance" → "InsurTech", "Real Estate" → "PropTech", "HR" → "HRTech", "Government" → "GovTech", "Education" → "EdTech", "Regulation" / "Compliance" → "RegTech", "Life Sciences" / "Pharma" / "Biotech" → "BioTech", "Media" / "Advertising" / "AdTech" → "MediaTech", "Travel" / "Hospitality" / "Tourism" → "TravelTech", "Cybersecurity" / "InfoSec" / "SecOps" / "Security" → "CyberSecurity"
+   - Synonyms: "Finance" → "FinTech", "Medical" / "HealthTech" → "Healthcare", "Legal" → "LegalTech", "Insurance" → "InsurTech", "Real Estate" → "PropTech", "HR" → "HRTech", "Government" → "GovTech", "Education" → "EdTech", "Regulation" / "Compliance" → "RegTech", "Life Sciences" / "Pharma" / "Biotech" → "BioTech", "Media" / "Advertising" / "AdTech" → "MediaTech", "Travel" / "Hospitality" / "Tourism" → "TravelTech", "Cybersecurity" / "InfoSec" / "SecOps" / "Security" → "CyberSecurity"
    - If a close match is found, present it to the user: *"Did you mean '{match}'? [Yes / No, show valid options]"*
 3. **No match** — If no close match exists, reject and show the valid values:
    - *"'{value}' is not a recognized {parameter}. Valid options: {list}. Please choose one, or use 'General SaaS' for unlisted industries."*
